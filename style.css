@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ff608c;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    width: 260px;
+    height: auto;
+}
+
+.mail {
+    position: fixed;
+    right: 15px;
+    top: 23px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+.description {
+    position: fixed;
+    width: 325px;
+    bottom: 65px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.copyright a {
+    color: black;
+}
+
+.privacy {
+    position: fixed;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.issues {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.issues a {
+    color: black;
+    text-decoration: none;
+}
+
+.issues a:hover {
+    text-decoration: underline;
+}
+
+.issue_seven img, .issue_six img, .issue_five img, .issue_four img, .issue_three img, .issue_two img, .issue_one img {
+    width: 420px;
+    padding-top: 20px;
+}
+
+.issue_six, .issue_five, .issue_seven, .issue_four, .issue_three, .issue_two, .issue_one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.centered {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.buy {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.selected-stores {
+    font-size: 14px;
+}
+
+.buy-here {
+    color: white;
+}
+
+.buy-here-two {
+    color: #ff608c;
+}
+
+.buy-here-three {
+    color: white;
+}
+
+.scroll-container {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory; 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    align-items: center; 
+    scrollbar-width: 0;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none
+}
+
+.issue_seven img, .issue_six img, .issue_five img, .issue_four img, .issue_three img, .issue_two img, .issue_one img {
+    scroll-snap-align: start center;
+}
+
+body {
+    background-color: white; /* Initial background color */
+    transition: background-color 0.5s; /* Transition effect */
+}
+
+body.scroll-transition {
+    background-color: #ff608c; /* Final background color */
+}
