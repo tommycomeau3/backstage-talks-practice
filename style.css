@@ -160,3 +160,16 @@ body {
 body.scroll-transition {
     background-color: #ff608c; /* Final background color */
 }
+
+@media (max-width: 1000px) {
+    .issues, .description, .mail {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 160px;
+    }
+}
+
